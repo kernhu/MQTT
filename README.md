@@ -6,7 +6,7 @@ and [eclipse/paho.mqtt.android](https://github.com/eclipse/paho.mqtt.android) ,I
 O/P/Q/R and solves any ANR.  
 MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配android 高版本系统，并且解决一些ANR问题；适用于物联网、iot设备；
 
-## How to use it?
+## How to use it? [![](https://jitpack.io/v/kernhu/MQTT.svg)](https://jitpack.io/#kernhu/MQTT)
 
 1. add the permissions and register the service in the manifest
 
@@ -21,9 +21,9 @@ MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配a
 <!-- permission for MQTT -->
 
 <application>
-    
+
     <!-- service for MQTT -->
-    <service android:name="org.cion.eclipse.mqtt5.service.MqttService" />
+    <service android:name="org.cion.eclipse.mqtt5.service.MqttService"/>
 
 </application>
 
@@ -152,12 +152,36 @@ MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配a
 
 ```
 
+5.To get a Git project into your build.
+
+5.1> Add it in your root build.gradle at the end of repositories:
+
+```
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+```
+
+5.2> Add the dependency
+
+```
+
+dependencies {
+        implementation 'com.github.kernhu:MQTT:Tag'
+        }
+        
+```
+
 ## Contribute
 
-Welcome to submit and solve bugs for it.
-Email: vsky580@gmail.com  
+Welcome to submit and solve bugs for it. Email: vsky580@gmail.com  
 Facebook: https://www.facebook.com/kern.hu.580   
-QQ群：43447852  
+QQ群：43447852
 
 ## Thanks
 
