@@ -5,7 +5,8 @@ MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配a
 ## How to use it?
 1. config and init it.  
 
- #```
+```java  
+  
  Mqtt5.with(getApplication())
          .setServerURI("your serverURI")
          .setClientId("your clientId")
@@ -25,19 +26,20 @@ MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配a
          .setCallback(mqttCallback)
          .initialize()
          .connect();
- #```
-   
+ 
+```
+
 2. publish message.  
 
- #```
+``
       Mqtt5.with(getApplication()).publishMessage("your message);   
- #```
+``
    
 3. recycle mqtt when activity destroy.  
 
- #```
+``
      Mqtt5.with(getApplication()).recycle();
- #```
+`` 
    
 ## Contribute
 
