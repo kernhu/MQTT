@@ -39,3 +39,7 @@ MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配a
 ## Contribute
 
 Welcome to submit and solve bugs for it.
+
+## Thanks
+[eclipse/paho/mqtt](https://github.com/eclipse/paho.mqtt.java)   
+[eclipse/paho.mqtt.android](https://github.com/eclipse/paho.mqtt.android)  
