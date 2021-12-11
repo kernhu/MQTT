@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     *
+     * listen mqtt connect action
      */
     MqttActionListener mqttActionListener = new MqttActionListener() {
 
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     };
 
     /**
-     *
+     * listen mqtt connect status and receive mqtt message
      */
     MqttCallback mqttCallback = new MqttCallback() {
         @Override
@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     };
 
     /**
-     *
+     * mqtt error trace
      */
     MqttTraceHandler traceHandler = new MqttTraceHandler() {
         @Override
