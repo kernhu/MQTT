@@ -3,7 +3,7 @@ MQTT5 for Android which develops base on [eclipse/paho.mqtt v5](https://github.c
 MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配android 高版本系统，并且解决一些ANR问题；适用于物联网、iot设备；
 
 ## How to use it?
-1. config and init it.
+1. config and init it.  
 ``
        Mqtt5.with(getApplication())
                 .setServerURI("your serverURI")
@@ -26,12 +26,12 @@ MQTT5 基于eclipse/paho.mqtt.android开发，MQTT升级为mqtt-v5版本,适配a
                         .connect();
 ``
    
-2. publish message.
+2. publish message.  
 ``
       Mqtt5.with(getApplication()).publishMessage("your message);   
 ``
    
-3. recycle mqtt when activity destroy.
+3. recycle mqtt when activity destroy.  
 ``
      Mqtt5.with(getApplication()).recycle();
 ``
